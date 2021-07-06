@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # Created By Me
     # My apps
     'Job',
+    'bootstrap4'
     
 ]
 
