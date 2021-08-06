@@ -37,6 +37,7 @@ def job_detail(request , slug):
 
 
 def add_job(request):
+    # save data from the form
     if request.method == 'POST':
         form = JobForm(request.POST , request.FILES)
         if form.is_valid():
@@ -46,6 +47,7 @@ def add_job(request):
 
             # show new job in job list
             return redirect(reverse('jobs:job_list'))
+    # show the form
     else:
         form = JobForm()
 
