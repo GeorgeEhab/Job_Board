@@ -35,7 +35,10 @@ INSTALLED_APPS = [
     # My apps
     'Job',
     'Accounts',
+    'Contact',
+    
     'bootstrap4',
+    'django_filters',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -141,3 +144,13 @@ import os
 # media files [any file to upload](User_Images,files,videos)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR , "media")
+
+
+# Email Configration Service
+       
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'georgeehab41@gmail.com'
+EMAIL_HOST_PASSWORD = 'ejhkhtmaotdtnbhn'
+EMAIL_USE_TLS = True
+EMAIL_PORT = '587'

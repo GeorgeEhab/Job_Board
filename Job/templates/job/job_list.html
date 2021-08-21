@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load bootstrap4 %}
 {% block body%}
     
     
@@ -25,7 +25,8 @@
                     <div class="job_filter white-bg">
                         <div class="form_inner white-bg">
                             <h3>Filter</h3>
-                            <form action="#">
+                            <form action="#" method="GET">
+                                <!--
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="single_field">
@@ -87,8 +88,12 @@
                                         </div>
                                     </div>
                                 </div>
+                                -->
+                                {% bootstrap_form myfilter.form %}
+                                <input type="submit" value="search" class="boxed-btn3 w-100 mt-2"/>
                             </form>
                         </div>
+                        <!--
                         <div class="range_wrap">
                             <label for="amount">Price range:</label>
                             <div id="slider-range"></div>
@@ -96,9 +101,12 @@
                                 <input type="text" id="amount" readonly style="border:0; color:#7A838B; font-size: 14px; font-weight:400;">
                             </p>
                         </div>
+
                         <div class="reset_btn">
                             <button  class="boxed-btn3 w-100" type="submit">Reset</button>
                         </div>
+                        -->
+
                     </div>
                 </div>
                 <div class="col-lg-9">
