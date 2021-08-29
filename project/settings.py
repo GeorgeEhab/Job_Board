@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     
     'bootstrap4',
     'django_filters',
+    'rest_framework',
 
     'django.contrib.admin',
     'django.contrib.auth',
